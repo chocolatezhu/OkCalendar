@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_theme"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/schedule_show_title"
+        layout="@layout/include_schedule_red_title_layout"/>
+
+    <ScrollView
+        android:layout_below="@id/schedule_show_title"
+        android:layout_above="@+id/schedule_show_bottom_delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/schedule_show_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/show_title"
+                android:paddingLeft="@dimen/DIMEN_54PX"
+                android:paddingRight="@dimen/DIMEN_54PX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_69PX"
+                android:textColor="@color/schedule_menu_text"
+                android:textSize="@dimen/text_size_45" />
+
+            <TextView
+                android:id="@+id/show_location"
+                android:paddingLeft="@dimen/DIMEN_54PX"
+                android:paddingRight="@dimen/DIMEN_54PX"
+                android:textSize="@dimen/text_size_36"
+                android:layout_marginTop="@dimen/DIMEN_12PX"
+                android:textColor="@color/schedule_menu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/show_start_time"
+                android:paddingLeft="@dimen/DIMEN_54PX"
+                android:paddingRight="@dimen/DIMEN_54PX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_60PX"
+                android:textColor="@color/schedule_menu_text"
+                android:textSize="@dimen/text_size_45" />
+
+            <TextView
+                android:id="@+id/show_end_time"
+                android:paddingLeft="@dimen/DIMEN_54PX"
+                android:paddingRight="@dimen/DIMEN_54PX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/DIMEN_25PX"
+                android:layout_marginTop="@dimen/DIMEN_25PX"
+                android:textColor="@color/schedule_menu_text"
+                android:textSize="@dimen/text_size_45" />
+
+            <TextView
+                android:id="@+id/show_all_day"
+                android:paddingLeft="@dimen/DIMEN_54PX"
+                android:paddingRight="@dimen/DIMEN_54PX"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/DIMEN_25PX"
+                android:textColor="@color/schedule_menu_text"
+                android:textSize="@dimen/DIMEN_45PX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:paddingLeft="@dimen/DIMEN_54PX"
+                android:paddingRight="@dimen/DIMEN_54PX"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_25PX"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重复："
+                    android:textColor="@color/schedule_menu_text"
+                    android:textSize="@dimen/text_size_45" />
+
+                <TextView
+                    android:id="@+id/show_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/schedule_menu_text"
+                    android:textSize="@dimen/text_size_45" />
+            </LinearLayout>
+
+            <View
+                style="@style/Title_bar_below_ViewSeparator"
+                android:layout_marginRight="@dimen/DIMEN_54PX"
+                android:layout_marginLeft="@dimen/DIMEN_54PX"
+                android:layout_marginTop="@dimen/DIMEN_143PX" />
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/DIMEN_54PX"
+                android:paddingRight="@dimen/DIMEN_54PX"
+                android:id="@+id/rl_reminder_show"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_143PX"
+                android:background="@drawable/item_selector_color">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="提醒"
+                    android:textColor="@color/schedule_menu_text"
+                    android:textSize="@dimen/text_size_45" />
+
+                <ImageView
+                    android:id="@+id/show_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/next" />
+
+                <TextView
+                    android:id="@+id/show_reminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/DIMEN_3PX"
+                    android:layout_toLeftOf="@id/show_next"
+                    android:textColor="@color/item_left_text_color"
+                    android:textSize="@dimen/text_size_33" />
+            </RelativeLayout>
+
+            <View
+                style="@style/Title_bar_below_ViewSeparator"
+                android:layout_marginLeft="@dimen/DIMEN_54PX"
+                android:layout_marginRight="@dimen/DIMEN_54PX" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_remark"
+                android:paddingLeft="@dimen/DIMEN_54PX"
+                android:paddingRight="@dimen/DIMEN_54PX"
+                android:layout_marginTop="@dimen/DIMEN_43PX"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="备注"
+                    android:textColor="@color/schedule_menu_text"
+                    android:textSize="@dimen/text_size_45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ScrollView
+                    android:scrollbars="none"
+                    android:overScrollMode="never"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/show_remark"
+                        android:textSize="@dimen/text_size_42"
+                        android:textColor="@color/item_left_text_color"
+                        android:layout_marginTop="@dimen/DIMEN_18PX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_above="@+id/schedule_show_bottom_delete"
+        style="@style/bottom_bar_below_ViewSeparator" />
+
+    <include
+        android:id="@+id/schedule_show_bottom_delete"
+        layout="@layout/include_schedule_show_bottom_delete_layout" />
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="line_color">#dedede</color>
+    <color name="month_text_color">#e75757</color>
+    <color name="day_text_color">#363636</color>
+    <color name="today_text_color">#ffffff</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- The app wide background color -->
+    <color name="background_color">#fafafa</color>
+
+    <color name="calendar_date_range_color">#80000000</color>
+
+    <color name="transparent_black">#7f000000</color>
+
+    <color name="month_day_names_color">#313131</color>
+    <color name="month_other_month_day_number">#cecece</color>
+
+    <color name="menu_tab_red">#e75757</color>
+    <color name = "schedule_menu_tab_color">#EEEEEE</color>
+    <color name="tv_mothoryear_text">#ffffff</color>
+    <color name="tv_mothoryear_text_press">#8dffffff</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="schedule_menu_text">#363636</color>
+    <color name="schedule_menu_title_text">#5c5c5c</color>
+
+    <color name="add_schedule_txt_normal">#ffffff</color>
+    <color name="add_schedule_txt_press">#9cffffff</color>
+
+    <color name="bottom_menu_text_normal">#848484</color>
+    <color name="bottom_menu_text_press">#23CA75</color>
+
+    <color name="item_left_text_color">#AAAAAA</color>
+
+    <color name="no_schedule_text_color">#C2C2C2</color>
+    <color name="weekend_txt_color">#C2C2C2</color>
+
+
+    <color name="background_theme">#F5F5F5</color>
+    <color name="transparent_background">#00F5F5F5</color>
+
+    <color name="item_press">#12000000</color>
+
+    <color name="line">#DEDEDE</color>
+
+    <color name="schedule_list_press_color">#12000000</color>
+    <color name="divider_color">#dedede</color>
+    <color name="bottom_divider_color">#c9c9c9</color>
+
+    <color name="almanac_txt_black_color">#363636</color>
+
+</resources>

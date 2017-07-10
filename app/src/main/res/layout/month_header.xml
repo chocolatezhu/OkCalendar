@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/week_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/schedule_menu_tab_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_74PX"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.ppzhu.calendar.view.WeekTitleTextView
+            android:id="@+id/d6_label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/week_title_sun"
+            android:textAllCaps="true"
+            android:textColor="@color/weekend_txt_color"
+            android:textSize="@dimen/DIMEN_39PX" />
+
+        <com.ppzhu.calendar.view.WeekTitleTextView
+            android:id="@+id/d0_label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/week_title_mon"
+            android:textAllCaps="true"
+            android:textColor="@color/schedule_menu_text"
+            android:textSize="@dimen/DIMEN_39PX" />
+
+        <com.ppzhu.calendar.view.WeekTitleTextView
+            android:id="@+id/d1_label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/week_title_tue"
+            android:textAllCaps="true"
+            android:textColor="@color/schedule_menu_text"
+            android:textSize="@dimen/DIMEN_39PX" />
+
+        <com.ppzhu.calendar.view.WeekTitleTextView
+            android:id="@+id/d2_label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/week_title_wed"
+            android:textAllCaps="true"
+            android:textColor="@color/schedule_menu_text"
+            android:textSize="@dimen/DIMEN_39PX" />
+
+        <com.ppzhu.calendar.view.WeekTitleTextView
+            android:id="@+id/d3_label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/week_title_thu"
+            android:textAllCaps="true"
+            android:textColor="@color/schedule_menu_text"
+            android:textSize="@dimen/DIMEN_39PX" />
+
+        <com.ppzhu.calendar.view.WeekTitleTextView
+            android:id="@+id/d4_label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/week_title_fri"
+            android:textAllCaps="true"
+            android:textColor="@color/schedule_menu_text"
+            android:textSize="@dimen/DIMEN_39PX" />
+
+        <com.ppzhu.calendar.view.WeekTitleTextView
+            android:id="@+id/d5_label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/week_title_sat"
+            android:textAllCaps="true"
+            android:textColor="@color/weekend_txt_color"
+            android:textSize="@dimen/DIMEN_39PX" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/Title_bar_below_ViewSeparator" />
+
+</LinearLayout>

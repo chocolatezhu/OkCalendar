@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/include_main_title_layout" />
+
+    <FrameLayout
+        android:id="@+id/main_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_tab"
+        android:layout_below="@id/rl_title"
+        android:background="@color/background_theme">
+
+        <!-- 年视图 -->
+        <android.support.v4.view.ViewPager
+            android:visibility="gone"
+            android:id="@+id/year_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+        <!-- 月视图 -->
+        <LinearLayout
+            android:id="@+id/month_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignWithParentIfMissing="true"
+            android:orientation="vertical">
+
+            <!-- 星期标题 -->
+            <include
+                layout="@layout/month_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.ppzhu.calendar.view.slidelayout.ScheduleLayout
+                    android:id="@+id/slSchedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/month_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <RelativeLayout
+                                android:id="@+id/rlMonthCalendar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.ppzhu.calendar.month.MonthCalendarView
+                                    android:id="@+id/mcvCalendar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/month_calendar_height"
+                                    android:overScrollMode="never"
+                                    app:month_day_text_size="@integer/calendar_text_size" />
+                            </RelativeLayout>
+
+                            <!-- 周视图 -->
+                            <com.ppzhu.calendar.week.WeekCalendarView
+                                android:id="@+id/wcvCalendar"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/week_calendar_height"
+                                android:overScrollMode="never"
+                                android:visibility="gone"
+                                app:week_day_text_size="@integer/calendar_text_size" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rlScheduleList"
+                            android:background="@color/background_theme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <View
+                                android:id="@+id/month_view_bottom_line"
+                                style="@style/Title_bar_below_ViewSeparator" />
+
+                            <com.ppzhu.calendar.view.slidelayout.ScheduleRecyclerView
+                                android:layout_below="@id/month_view_bottom_line"
+                                android:id="@+id/rvScheduleList"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:orientation="vertical"
+                                android:overScrollMode="never" />
+
+                            <TextView
+                                android:id="@+id/tv_no_schedule"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/DIMEN_203PX"
+                                android:layout_centerHorizontal="true"
+                                android:text="无日程"
+                                android:textColor="@color/bottom_menu_text_color_selector"
+                                android:textSize="@dimen/DIMEN_48PX" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.ppzhu.calendar.view.slidelayout.ScheduleLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        style="@style/bottom_bar_below_ViewSeparator"
+        android:layout_above="@+id/bottom_tab" />
+
+    <include
+        android:id="@+id/bottom_tab"
+        layout="@layout/month_footer" />
+
+</RelativeLayout>

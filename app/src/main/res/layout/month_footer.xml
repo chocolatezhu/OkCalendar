@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_153PX"
+    android:layout_alignParentBottom="true"
+    android:background="@color/schedule_menu_tab_color"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/tv_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="6dp"
+        android:drawablePadding="-5dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/bottom_menu_today_btn_selector"
+        android:text="今天"
+        android:textColor="@color/bottom_menu_text_color_selector"
+        android:textSize="@dimen/DIMEN_30PX" />
+
+</LinearLayout>

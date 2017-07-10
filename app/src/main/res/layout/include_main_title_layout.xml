@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_194PX"
+    android:background="@color/menu_tab_red">
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_138PX" >
+
+        <LinearLayout
+            android:id="@+id/year_title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_54PX"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016"
+                android:textColor="@color/tv_mothoryear_text"
+                android:textSize="@dimen/text_size_48" />
+
+            <LinearLayout
+                android:layout_marginTop="-3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/DIMEN_24PX"
+                    android:layout_height="@dimen/DIMEN_6PX"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/tv_mothoryear_text" />
+
+                <TextView
+                    android:id="@+id/tv_luna_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_14PX"
+                    android:text="丙猴年"
+                    android:textColor="@color/tv_mothoryear_text"
+                    android:textSize="@dimen/text_size_33" />
+
+                <View
+                    android:layout_width="@dimen/DIMEN_24PX"
+                    android:layout_height="@dimen/DIMEN_3PX"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_28PX"
+                    android:background="@color/tv_mothoryear_text" />
+
+                <TextView
+                    android:id="@+id/tv_day_of_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_14PX"
+                    android:text="农历初一"
+                    android:textColor="@color/tv_mothoryear_text"
+                    android:textSize="@dimen/text_size_33" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/back_color"
+            android:gravity="center"
+            android:text="2016年8月"
+            android:textColor="@color/titlebar_txt_selector"
+            android:textSize="@dimen/text_size_48" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/DIMEN_45PX"
+            android:paddingLeft="@dimen/DIMEN_36PX"
+            android:button="@null"
+            android:gravity="center"
+            android:src="@drawable/add" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/schedule_show_bottom_delete_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_153PX"
+    android:layout_alignParentBottom="true"
+    android:background="@color/schedule_menu_tab_color">
+
+    <Button
+        android:id="@+id/schedule_show_bottom_delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/schedule_show_bottom_delete_btn_selector"
+        android:text="删除"
+        android:paddingTop="6dp"
+        android:drawablePadding="-5dp"
+        android:textColor="@color/bottom_menu_text_color_selector"
+        android:textSize="@dimen/DIMEN_30PX" />
+
+</RelativeLayout>

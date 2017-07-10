@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_143PX"
+        android:layout_marginLeft="@dimen/DIMEN_54PX"
+        android:layout_marginRight="@dimen/DIMEN_54PX">
+
+        <TextView
+            android:id="@+id/tv_repeat_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="永不"
+            android:textColor="@color/schedule_menu_text"
+            android:textSize="@dimen/text_size_45" />
+
+        <RadioButton
+            android:textSize="@dimen/text_size_33"
+            android:textColor="@color/item_left_text_color"
+            android:drawableRight="@drawable/radio_button"
+            android:visibility="visible"
+            android:id="@+id/rb_repeat_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:background="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <ImageView
+            android:id="@+id/iv_repeat_item"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/next"
+            android:clickable="false"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <View
+        style="@style/Title_bar_below_ViewSeparator"
+        android:layout_marginLeft="@dimen/DIMEN_54PX"
+        android:layout_marginRight="@dimen/DIMEN_54PX" />
+</LinearLayout>

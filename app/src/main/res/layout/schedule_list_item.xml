@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_title_layout"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/DIMEN_54PX"
+        android:layout_marginRight="@dimen/DIMEN_54PX"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_119PX">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:text="@string/schedule"
+            android:textSize="@dimen/text_size_36"
+            android:textColor="@color/almanac_txt_black_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/Title_bar_below_ViewSeparator"
+            android:layout_marginLeft="@dimen/DIMEN_54PX"
+            android:layout_marginRight="@dimen/DIMEN_54PX" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/item_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_143PX"
+        android:paddingLeft="@dimen/DIMEN_54PX"
+        android:paddingRight="@dimen/DIMEN_54PX"
+        android:background="@drawable/schedule_list_selector"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/DIMEN_160PX"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_start_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="8:30"
+                android:textColor="@color/schedule_menu_text"
+                android:textSize="@dimen/text_size_33" />
+
+            <TextView
+                android:id="@+id/tv_end_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_start_item"
+                android:layout_marginTop="@dimen/DIMEN_10PX"
+                android:text="21:30"
+                android:textColor="@color/no_schedule_text_color"
+                android:textSize="@dimen/text_size_33" />
+
+            <TextView
+                android:id="@+id/tv_all_day"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/schedule_menu_text"
+                android:textSize="@dimen/text_size_33" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <View
+                style="@style/vertical_separator"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/DIMEN_30PX" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_cake_icon"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/DIMEN_36PX"
+            android:layout_marginRight="@dimen/DIMEN_15PX"
+            android:background="@drawable/list_schedule_cake_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_title_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/DIMEN_21PX"
+            android:ellipsize="end"
+            android:text="21:30"
+            android:textColor="@color/schedule_menu_title_text"
+            android:textSize="@dimen/text_size_45"
+            android:maxLines="1" />
+    </LinearLayout>
+
+    <View
+        style="@style/Title_bar_below_ViewSeparator"
+        android:layout_marginLeft="@dimen/DIMEN_54PX"
+        android:layout_marginRight="@dimen/DIMEN_54PX" />
+</LinearLayout>

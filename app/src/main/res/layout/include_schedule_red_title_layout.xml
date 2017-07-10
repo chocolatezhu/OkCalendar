@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/schedule_show_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_138PX"
+    android:background="@color/menu_tab_red">
+
+    <ImageView
+        android:id="@+id/iv_title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:src="@drawable/back_color" />
+
+    <TextView
+        android:id="@+id/tv_title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_48" />
+
+    <TextView
+        android:id="@+id/tv_title_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/DIMEN_53PX"
+        android:paddingRight="@dimen/DIMEN_54PX"
+        android:textColor="@color/add_schedule_txt_selector"
+        android:textSize="@dimen/text_size_45" />
+
+    <View
+        style="@style/Title_bar_below_ViewSeparator"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

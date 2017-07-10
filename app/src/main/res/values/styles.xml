@@ -1,0 +1,272 @@
+<resources>
+
+     Base application theme.
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <!-- Base application theme. -->
+    <style name="HoloTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <!-- 去掉状态栏阴影 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:windowBackground">@color/white</item>-->
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="transfer" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="normal_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+        <!--<item name="android:windowAnimationStyle">@style/alert_dialog_animation</item>-->
+    </style>
+
+    <style name="TextAppearance" parent="android:TextAppearance"></style>
+
+    <style name="TextAppearance.SelectCalendar_Name">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.MonthView_MiniDayLabel">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/month_other_month_day_number</item>
+    </style>
+
+    <style name="TextAppearance.MonthView_DayLabel">
+        <item name="android:textSize">@dimen/DIMEN_36PX</item>
+        <item name="android:textColor">@color/month_day_names_color</item>
+    </style>
+
+    <style name="TextAppearance.AgendaView_ValueLabel">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.EditEvent_Label">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">16dip</item>
+        <item name="android:layout_marginRight">-16dip</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">top|left</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFAAAAAA</item>
+    </style>
+
+    <style name="TextAppearance.EditEvent_Button" parent="TextAppearance.EditEvent_Label">
+        <item name="android:textColor">#FF777777</item>
+    </style>
+
+    <style name="TextAppearance.Recurrence_Button" parent="TextAppearance.EditEvent_Label">
+        <item name="android:textColor">#FF000000</item>
+    </style>
+
+    <style name="TextAppearance.EditEvent_LabelSmall" parent="TextAppearance.EditEvent_Small">
+        <item name="android:minHeight">24dip</item>
+        <item name="android:layout_width">144dip</item>
+        <item name="android:layout_marginLeft">16dip</item>
+        <item name="android:layout_marginRight">16dip</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+        <item name="android:layout_marginBottom">-12dip</item>
+    </style>
+
+    <style name="TextAppearance.EditEvent_Small">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFAAAAAA</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.EditEvent">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FF333333</item>
+    </style>
+
+    <style name="TextAppearance.EditEvent_Value" parent="TextAppearance.EditEvent">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">12dip</item>
+        <item name="android:layout_marginLeft">12dip</item>
+    </style>
+
+    <style name="TextAppearance.EditEventCalSpinner">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+    <style name="TextAppearance.EditEvent_CalSpinnerValue" parent="TextAppearance.EditEventCalSpinner">
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+
+    <style name="TextAppearance.EditEvent_Spinner" parent="android:style/Widget.Holo.Light.Spinner">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FF333333</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+    </style>
+
+    <style name="TextAppearance.EditEvent_SpinnerButton" parent="TextAppearance.EditEvent_Spinner">
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+
+    <style name="TextAppearance.EditEvent_homeTime">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:paddingRight">2dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextAppearance.EventInfo_Label">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">16dip</item>
+    </style>
+
+    <style name="EditEvent_Layout" parent="android:Theme.Holo.Light"></style>
+
+    <style name="TextAppearance.Date_Range_Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/calendar_date_range_color</item>
+    </style>
+
+    <style name="CalendarTheme" parent="android:Theme.Holo.Light">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="CalendarTheme.WithActionBar" parent="android:Theme.Holo.Light">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:actionBarStyle">@style/CalendarActionBarStyle</item>
+        <item name="android:endYear">2036</item>
+        <item name="android:startYear">1970</item>
+    </style>
+
+    <style name="CalendarActionBarStyle" parent="android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:displayOptions">showCustom</item>
+    </style>
+
+    <style name="CalendarTheme.WithActionBarWallpaper" parent="CalendarTheme.WithActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+
+    <style name="EditEventCustomActionButton" parent="android:style/Widget.Holo.Light.ActionButton">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:focusable">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="NotificationPrimaryText" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+
+    <style name="NotificationSecondaryText" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.RecurrencePickerStyle">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextAppearance.Recurrence_SpinnerButton" parent="android:style/Widget.Holo.Light.Spinner" />
+
+    <style name="margin_ViewSeparator">
+        <item name="android:layout_height">@dimen/DIMEN_1PX</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#DEDEDE</item>
+        <item name="android:layout_marginRight">@dimen/DIMEN_54PX</item>
+        <item name="android:layout_marginLeft">@dimen/DIMEN_53PX</item>
+    </style>
+
+    <style name="Title_bar_below_ViewSeparator">
+        <item name="android:layout_height">@dimen/DIMEN_1PX</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/divider_color</item>
+    </style>
+
+    <style name="bottom_bar_below_ViewSeparator">
+        <item name="android:layout_height">@dimen/DIMEN_1PX</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/bottom_divider_color</item>
+    </style>
+
+    <style name="vertical_separator">
+        <item name="android:layout_height">@dimen/DIMEN_95PX</item>
+        <item name="android:layout_width">@dimen/DIMEN_1PX</item>
+        <item name="android:background">#DEDEDE</item>
+    </style>
+
+    <style name="dialog_no_title">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+    </style>
+
+    <style name="TimerAlertFullScreenTheme" parent="android:style/Theme.Material.Wallpaper.NoTitleBar">
+        <item name="android:statusBarColor">@color/transparent</item>
+    </style>
+
+    <style name="Transparent" parent="TimerAlertFullScreenTheme">
+        <item name="android:windowBackground">@color/transparent_black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="transcutestyle" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:windowFrame">@android:color/transparent</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimAmount">0.0</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+
+</resources>

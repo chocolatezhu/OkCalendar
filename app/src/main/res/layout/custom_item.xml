@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CheckBoxEx="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_143PX"
+        android:layout_marginRight="@dimen/DIMEN_54PX"
+        android:layout_marginLeft="@dimen/DIMEN_54PX">
+        <TextView
+            android:id="@+id/tv_repeat_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/text_size_45"
+            android:textColor="@color/schedule_menu_text"
+            android:layout_centerVertical="true"
+            android:text="永不"/>
+
+        <CheckBox
+            android:id="@+id/rb_repeat_item"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+    </RelativeLayout>
+    <View
+        android:layout_marginRight="@dimen/DIMEN_54PX"
+        android:layout_marginLeft="@dimen/DIMEN_54PX"
+        style="@style/Title_bar_below_ViewSeparator"/>
+</LinearLayout>

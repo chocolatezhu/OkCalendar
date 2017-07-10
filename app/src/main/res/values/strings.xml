@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- schedule -->
+    <string name="schedule_delete_dialog_message">确定删除该日程吗？</string>
+    <string name="schedule_delete_sure">删除</string>
+    <string name="schedule_delete_cancel">取消</string>
+
+    <string name="week_title_sun">日</string>
+    <string name="week_title_mon">一</string>
+    <string name="week_title_tue">二</string>
+    <string name="week_title_wed">三</string>
+    <string name="week_title_thu">四</string>
+    <string name="week_title_fri">五</string>
+    <string name="week_title_sat">六</string>
+
+    <string-array name="gregorianFestivals">
+        <item>元旦</item>
+        <item>情人节</item>
+        <item>妇女节</item>
+        <item>植树节</item>
+        <item>愚人节</item>
+        <item>地球日</item>
+        <item>劳动节</item>
+        <item>青年节</item>
+        <item>儿童节</item>
+        <item>环境日</item>
+        <item>建党节</item>
+        <item>建军节</item>
+        <item>教师节</item>
+        <item>国庆节</item>
+        <item>万圣夜</item>
+        <item>万圣节</item>
+        <item>平安夜</item>
+        <item>圣诞节</item>
+    </string-array>
+    <string-array name="lunarFestivals">
+        <item>春节</item>
+        <item>元宵节</item>
+        <item>端午节</item>
+        <item>七夕</item>
+        <item>中秋节</item>
+        <item>重阳节</item>
+        <item>腊八节</item>
+        <item>小年</item>
+        <item>南方小年</item>
+        <item>除夕</item>
+    </string-array>
+    <string-array name="solarTerm">
+        <item>小寒</item>
+        <item>大寒</item>
+        <item>立春</item>
+        <item>雨水</item>
+        <item>惊蛰</item>
+        <item>春分</item>
+        <item>清明</item>
+        <item>谷雨</item>
+        <item>立夏</item>
+        <item>小满</item>
+        <item>芒种</item>
+        <item>夏至</item>
+        <item>小暑</item>
+        <item>大暑</item>
+        <item>立秋</item>
+        <item>处暑</item>
+        <item>白露</item>
+        <item>秋分</item>
+        <item>寒露</item>
+        <item>霜降</item>
+        <item>立冬</item>
+        <item>小雪</item>
+        <item>大雪</item>
+        <item>冬至</item>
+    </string-array>
+    <string-array name="chineseDigital">
+        <item>〇</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+        <item>十</item>
+    </string-array>
+    <string-array name="chinesePrefix">
+        <item>初</item>
+        <item>十</item>
+        <item>廿</item>
+        <item>正</item>
+        <item>冬</item>
+        <item>腊</item>
+        <item>闰</item>
+        <item>卅</item>
+    </string-array>
+    <string-array name="chineseTime">
+        <item>年</item>
+        <item>月</item>
+        <item>日</item>
+    </string-array>
+    <string-array name="chinese_gan">
+        <item>甲</item>
+        <item>乙</item>
+        <item>丙</item>
+        <item>丁</item>
+        <item>戊</item>
+        <item>己</item>
+        <item>庚</item>
+        <item>辛</item>
+        <item>壬</item>
+        <item>癸</item>
+    </string-array>
+    <string-array name="chinese_zhi">
+        <item>子</item>
+        <item>丑</item>
+        <item>寅</item>
+        <item>卯</item>
+        <item>辰</item>
+        <item>巳</item>
+        <item>午</item>
+        <item>未</item>
+        <item>申</item>
+        <item>酉</item>
+        <item>戌</item>
+        <item>亥</item>
+    </string-array>
+    <string-array name="chinese_animal">
+        <item>鼠</item>
+        <item>牛</item>
+        <item>虎</item>
+        <item>兔</item>
+        <item>龙</item>
+        <item>蛇</item>
+        <item>马</item>
+        <item>羊</item>
+        <item>猴</item>
+        <item>鸡</item>
+        <item>狗</item>
+        <item>猪</item>
+    </string-array>
+
+    <!--  设置年视图标题使用，和黄历使用的不一样 -->
+    <string-array name="year_gan">
+        <item>庚</item>
+        <item>辛</item>
+        <item>壬</item>
+        <item>癸</item>
+        <item>甲</item>
+        <item>乙</item>
+        <item>丙</item>
+        <item>丁</item>
+        <item>戊</item>
+        <item>己</item>
+    </string-array>
+
+    <!--  设置年视图标题使用，和黄历使用的不一样 -->
+    <string-array name="year_zhi">
+        <item>申</item>
+        <item>酉</item>
+        <item>戌</item>
+        <item>亥</item>
+        <item>子</item>
+        <item>丑</item>
+        <item>寅</item>
+        <item>卯</item>
+        <item>辰</item>
+        <item>巳</item>
+        <item>午</item>
+        <item>未</item>
+    </string-array>
+
+    <!--  设置年视图标题使用，和黄历使用的不一样 -->
+    <string-array name="year_animal">
+        <item>猴</item>
+        <item>鸡</item>
+        <item>狗</item>
+        <item>猪</item>
+        <item>鼠</item>
+        <item>牛</item>
+        <item>虎</item>
+        <item>兔</item>
+        <item>龙</item>
+        <item>蛇</item>
+        <item>马</item>
+        <item>羊</item>
+    </string-array>
+
+    <string name="app_name">日历</string>
+
+    <string name="schedule">日程</string>
+
+    <string name="schedule_detail_title">日程详情</string>
+    <string name="schedule_detail_edit">编辑</string>
+
+    <string name="schedule_remind_title">提醒</string>
+
+    <string name="schedule_repeat_title">重复</string>
+    <string name="schedule_repeat_custom_title">自定</string>
+
+    <string-array name="month_name">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+    <string name="menu_save">保存</string>
+
+    <string name="event_create" msgid="6941040556709110617">"新建日程"</string>
+    <string name="hint_what" msgid="709155115005044531">"标题"</string>
+    <string name="hint_where" msgid="4972598001033801974">"地点"</string>
+    <string name="edit_event_all_day_label" msgid="6200181113992136073">"全天"</string>
+
+    <string name="event_info_reminders_label" msgid="8913097552956388972">"提醒"</string>
+    <string name="discard_label" msgid="2394623883289782541">"取消"</string>
+
+    <!--  <string name="custom" msgid="3806817351377723249" product="tablet">"自定义（无法在平板电脑上自定义）"</string>-->
+
+    <string name="accessibility_pick_start_date" msgid="3926641487042699037">"开始"</string>
+    <string name="accessibility_pick_end_date" msgid="5624250196618643922">"结束"</string>
+    <string name="accessibility_repeats" msgid="1629279916830919582">"重复"</string>
+
+    <string name="input_maxlength">已经超过最大字符限制</string>
+
+</resources>
